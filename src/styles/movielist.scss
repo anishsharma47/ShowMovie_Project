@@ -1,0 +1,36 @@
+
+.movielist{
+    padding: 50px 30px;
+    >.row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 5vw;
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+
+@media (max-width:600px) {
+
+    .movielist{
+        width: 100%;
+        position: relative;
+        padding: 0 30px;
+        >h1{
+            width: 100%;
+            margin-top:50px;
+            display: block;
+            font-size:4vw;
+            border-bottom: 2px solid red;
+         
+        }
+        >.row{
+            justify-content: space-between;
+            margin-top: 5vw;
+        }
+    }
+}
+
+

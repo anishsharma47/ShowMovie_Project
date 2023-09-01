@@ -1,0 +1,207 @@
+.header{
+    width: 100%;
+    height: 100px;
+     position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: black;
+    >a{
+        >img{
+           width: 15vw;
+        }
+    }
+    >.header-part2{
+        display: flex;
+        gap: 4vw;
+        transition: all .5s linear;
+
+
+        >a{
+            text-decoration: none;
+            font-size: 1.5vw;
+            position: relative;
+            padding: 4px 0;
+            &::after{
+                content: '';
+                width: 0%;
+                height: 2px;
+                background-color: red;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: width .5s linear;
+            }
+      
+
+            &:hover{
+                color: red;
+                &::after{
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background-color: red;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+
+            }
+
+        }
+    }
+    >i{
+       display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .header{
+        height: 50px; 
+         position: fixed;
+         background-color: black;
+         
+        >a{
+            >img{
+               width: 20vw;
+            }
+        }
+        .header-part2{ 
+            border-radius:0;
+            border: 1px solid rgba(202, 65, 65, 0.401);
+           position: fixed;
+           top: 50px;
+           height:100%;
+           overflow-y:auto;
+           width: 50vw;
+           right: -50vw;
+           background-color: black;
+           display: flex;
+           flex-direction: column;   
+           padding: 10px 30px;
+           gap: 10vw;
+         
+           >a{
+            font-size: 3vw;
+           }
+
+        }
+        >.show_menu{
+            right: 0;
+         
+            >a{
+                font-size: 3vw;
+            }
+        }
+        >i{
+           display: block;
+           font-size: 5vw;
+           cursor: pointer;
+        }
+    
+    }
+}
+
+@media (max-width:400px) {
+    .header{
+        padding: 0 10vw;
+    }
+}
+
+@media (max-height:265px) {
+
+    .header{
+        height: 50px; 
+         position: fixed;
+         background-color: black;
+        >a{
+            >img{
+               width: 20vw;
+            }
+        }
+        .header-part2{ 
+            border-radius:0;
+            border: 1px solid rgba(202, 65, 65, 0.401);
+           position: fixed;
+           top: 50px;
+           height:100%;
+           overflow-y:auto;
+           width: 50vw;
+           right: -100vw;
+           background-color: black;
+           display: flex;
+           flex-direction: column;   
+           padding: 2vw 5vw;
+           gap: 5vw;
+         
+           >a{
+            font-size: 3vw;
+           }
+
+        }
+        >.show_menu{
+            right: 0;
+         
+            >a{
+                font-size: 3vw;
+            }
+        }
+        >i{
+           display: block;
+           font-size: 5vw;
+           cursor: pointer;
+        }
+    
+    }
+}
+
+@media (max-width:120px) {
+
+    .header{
+        height: 50px; 
+         position: fixed;
+         background-color: black;
+        >a{
+            >img{
+               width: 20vw;
+            }
+        }
+        .header-part2{ 
+        
+           top: 50px;
+           height:100%;
+           overflow-y:auto;
+           width: 50vw;
+           right:-100%;
+           padding: 2vw 5vw;
+           gap: 10vw;
+         
+           >a{
+            font-size: 3vw;
+           }
+
+        }
+        >.show_menu{
+            right: 0;
+         
+            >a{
+                font-size: 3vw;
+            }
+        }
+        >i{
+           display: block;
+           font-size: 5vw;
+           cursor: pointer;
+        }
+    
+    }
+    
+}
+
+
+
+    
