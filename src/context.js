@@ -20,7 +20,7 @@ const AppProvider = ({ children }) => {
     } catch (error) {
 
     }
-  };
+  }
 
   useEffect(() => {
     fetchMovie();

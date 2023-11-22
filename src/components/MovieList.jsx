@@ -12,7 +12,7 @@ const {movie,loading,fetchMovie}=useGlobalContext();
   useEffect(()=>{
     window.scrollTo(0,0)
     fetchMovie(type);
-  },[]);
+  },[type]);
 
 
 
