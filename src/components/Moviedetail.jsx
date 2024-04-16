@@ -11,7 +11,7 @@ const Moviedetail = () => {
 
   const fetchMoviebyId = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=2b42fd26ef114dbdda3b761976d2e52a`
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}`
     );
     setmovie(data);
     setloading(false);

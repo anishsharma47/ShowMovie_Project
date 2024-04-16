@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -7,7 +7,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import MovieList from './MovieList';
 import { Link } from 'react-router-dom';
 import Loader from './Loader';
-import Mouse from './Mouse';
 import { useGlobalContext } from '../context';
 
 const Home = () => {
